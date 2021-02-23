@@ -1,0 +1,60 @@
+# Zhivaldo Fabio H.
+# 71200608
+
+'''
+Mengetahui besar diskon yang didapatkan dengan percabangan
+Terdapat 3 pilihan diskon yang akan disesuaikan dengan Total belanja.
+'''
+
+# Input :
+'''
+- Memasukan Uang belanja
+'''
+# Proses :
+'''
+- Memilih percabangan dan besar diskon yang didapat
+'''
+# Output :
+'''
+- Display total belanja dan jumlah diskon yang didapat
+- Beserta dengan total belanja dengan diskon.
+'''
+
+#===========================================================================================#
+
+print ("="*10 + "Berapa Diskonmu??" + "="*10)
+print ()
+
+# 3 Diskon
+diskon1 = 10/100
+diskon2 = 15/100
+diskon3 = 20/100
+
+total_belanja = int(input("Masukkan Total belanja anda : Rp."))
+
+if total_belanja < 100000 :
+    print ("Maaf anda tidak mendapatkan Diskon :D")
+
+elif total_belanja < 200000 :
+    print ("Selamat anda mendapatkan Diskon!")
+    print ()
+    print ("Diskon anda : 10%")
+    print ("Total belanja anda :", total_belanja)
+    print ("Yang harus dibayarkan :", total_belanja - (total_belanja * diskon1))
+
+elif total_belanja < 500000 :
+    print ("Selamat anda mendapatkan Diskon!")
+    print ()
+    print ("Diskon anda : 15%")
+    print ("Total belanja anda :", total_belanja)
+    print ("Yang harus dibayarkan :", total_belanja - (total_belanja * diskon2))
+
+elif total_belanja >= 500000 :
+    print ("Selamat anda mendapatkan Diskon!")
+    print ()
+    print ("Diskon anda : 20%")
+    print ("Total belanja anda :", total_belanja)
+    print ("Yang harus dibayarkan :", total_belanja - (total_belanja * diskon3))
+
+else :
+    exit ()
